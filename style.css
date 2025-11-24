@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: navy;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: lightblue;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/home_banner.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: navy;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+}
+
+/* About Page Image */
+.about-img {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+.staff-table tr:nth-child(even),
+.property-table tr:nth-child(even) {
+    background: #e6e6e6;
+}
+
+.for-sale {
+    color: green;
+    font-weight: bold;
+}
+
+.rented {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #999;
+}
+
+/* Form Styling */
+.form-container {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: lightblue;
+    color: navy;
+}
+
+/* Footer */
+footer {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
